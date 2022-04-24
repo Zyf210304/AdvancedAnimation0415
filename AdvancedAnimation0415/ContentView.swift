@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        Home()
+            .overlay(alignment: .bottomLeading) {
+                
+                Button {
+                    
+                } label: {
+                    
+                    Image(systemName: "record.circle")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                }
+            }
     }
 }
 
